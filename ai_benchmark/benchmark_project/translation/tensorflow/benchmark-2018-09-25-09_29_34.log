@@ -1,0 +1,187 @@
+STARTING TIMING RUN AT 2018-09-25 01:30:17 AM
+running benchmark with seed 1
+INFO:tensorflow:Creating directory processed_data
+INFO:tensorflow:Step 1/4: Downloading data from source
+INFO:tensorflow:Already downloaded and extracted http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12.tgz.
+INFO:tensorflow:Already downloaded and extracted http://www.statmt.org/wmt13/training-parallel-commoncrawl.tgz.
+INFO:tensorflow:Already downloaded and extracted http://www.statmt.org/wmt13/training-parallel-europarl-v7.tgz.
+INFO:tensorflow:Already downloaded and extracted http://data.statmt.org/wmt17/translation-task/dev.tgz.
+INFO:tensorflow:Step 2/4: Creating subtokenizer and building vocabulary
+INFO:tensorflow:Begin steps to create subtoken vocabulary...
+INFO:tensorflow:Using min_count=6 to generate vocab with target size 32768
+INFO:tensorflow:	Generating subtokens: iteration 0
+INFO:tensorflow:	Vocab size: 96533
+INFO:tensorflow:	Generating subtokens: iteration 1
+INFO:tensorflow:	Vocab size: 33244
+INFO:tensorflow:	Generating subtokens: iteration 2
+INFO:tensorflow:	Vocab size: 34072
+INFO:tensorflow:	Generating subtokens: iteration 3
+INFO:tensorflow:	Vocab size: 33945
+INFO:tensorflow:Generated vocabulary with 33945 subtokens.
+INFO:tensorflow:Initializing Subtokenizer from file processed_data/vocab.ende.32768.
+INFO:tensorflow:Step 3/4: Compiling training and evaluation data
+INFO:tensorflow:Compiling files with tag train.
+INFO:tensorflow:Reading files /raw_data/training/news-commentary-v12.de-en.en and /raw_data/training/news-commentary-v12.de-en.de.
+INFO:tensorflow:Reading files /raw_data/commoncrawl.de-en.en and /raw_data/commoncrawl.de-en.de.
+INFO:tensorflow:Reading files /raw_data/training/europarl-v7.de-en.en and /raw_data/training/europarl-v7.de-en.de.
+INFO:tensorflow:Compiling files with tag dev.
+INFO:tensorflow:Reading files /raw_data/dev/newstest2013.en and /raw_data/dev/newstest2013.de.
+INFO:tensorflow:Step 4/4: Preprocessing and saving data
+INFO:tensorflow:Saving files with tag train.
+INFO:tensorflow:	Saving case 100000.
+INFO:tensorflow:	Saving case 200000.
+INFO:tensorflow:	Saving case 300000.
+INFO:tensorflow:	Saving case 400000.
+INFO:tensorflow:	Saving case 500000.
+INFO:tensorflow:	Saving case 600000.
+INFO:tensorflow:	Saving case 700000.
+INFO:tensorflow:	Saving case 800000.
+INFO:tensorflow:	Saving case 900000.
+INFO:tensorflow:	Saving case 1000000.
+INFO:tensorflow:	Saving case 1100000.
+INFO:tensorflow:	Saving case 1200000.
+INFO:tensorflow:	Saving case 1300000.
+INFO:tensorflow:	Saving case 1400000.
+INFO:tensorflow:	Saving case 1500000.
+nINFO:tensorflow:	Saving case 1600000.
+INFO:tensorflow:	Saving case 1700000.
+INFO:tensorflow:	Saving case 1800000.
+INFO:tensorflow:	Saving case 1900000.
+INFO:tensorflow:	Saving case 2000000.
+INFO:tensorflow:	Saving case 2100000.
+INFO:tensorflow:	Saving case 2200000.
+INFO:tensorflow:	Saving case 2300000.
+INFO:tensorflow:	Saving case 2400000.
+INFO:tensorflow:	Saving case 2500000.
+INFO:tensorflow:	Saving case 2600000.
+INFO:tensorflow:	Saving case 2700000.
+INFO:tensorflow:	Saving case 2800000.
+INFO:tensorflow:	Saving case 2900000.
+INFO:tensorflow:	Saving case 3000000.
+INFO:tensorflow:	Saving case 3100000.
+INFO:tensorflow:	Saving case 3200000.
+INFO:tensorflow:	Saving case 3300000.
+INFO:tensorflow:	Saving case 3400000.
+INFO:tensorflow:	Saving case 3500000.
+INFO:tensorflow:	Saving case 3600000.
+INFO:tensorflow:	Saving case 3700000.
+INFO:tensorflow:	Saving case 3800000.
+INFO:tensorflow:	Saving case 3900000.
+INFO:tensorflow:	Saving case 4000000.
+INFO:tensorflow:	Saving case 4100000.
+INFO:tensorflow:	Saving case 4200000.
+INFO:tensorflow:	Saving case 4300000.
+INFO:tensorflow:	Saving case 4400000.
+INFO:tensorflow:	Saving case 4500000.
+INFO:tensorflow:Saved 4590100 Examples
+INFO:tensorflow:Saving files with tag dev.
+INFO:tensorflow:Saved 2999 Examples
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00001-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00002-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00003-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00004-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00005-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00006-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00007-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00008-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00009-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00010-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00011-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00012-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00013-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00014-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00015-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00016-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00017-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00018-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00019-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00020-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00021-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00022-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00023-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00024-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00025-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00026-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00027-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00028-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00029-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00030-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00031-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00032-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00033-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00034-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00035-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00036-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00037-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00038-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00039-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00040-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00041-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00042-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00043-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00044-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00045-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00046-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00047-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00048-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00049-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00050-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00051-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00052-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00053-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00054-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00055-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00056-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00057-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00058-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00059-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00060-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00061-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00062-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00063-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00064-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00065-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00066-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00067-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00068-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00069-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00070-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00071-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00072-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00073-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00074-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00075-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00076-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00077-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00078-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00079-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00080-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00081-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00082-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00083-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00084-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00085-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00086-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00087-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00088-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00089-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00090-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00091-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00092-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00093-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00094-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00095-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00096-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00097-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00098-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00099-of-00100
+INFO:tensorflow:Shuffling records in file processed_data/wmt32k-train-00100-of-00100
+Setting random seed =  1
+Traceback (most recent call last):
+  File "transformer/transformer_main.py", line 404, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "transformer/transformer_main.py", line 298, in main
+    raise ValueError("BLEU source file %s does not exist" % FLAGS.bleu_source)
+ValueError: BLEU source file newstest2014.en does not exist
